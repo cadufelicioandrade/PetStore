@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "FrontEnd", "FrontEnd", "{08D943E3-4F6C-45FE-9448-8DA032DD309B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BackEnd", "BackEnd", "{B570239A-36E6-4032-8C9F-352B29BFBE2E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{050720F0-E584-4968-AEBA-35022ACF8F73}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "AuthServices", "AuthServices", "{E9D2DD11-EDB0-4E30-A2AB-275F44227F7A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.ProductAPI", "PetStore.ProductAPI\PetStore.ProductAPI.csproj", "{0A99B151-0D5D-4F86-846E-D484756AEFC4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.AuthAPI", "PetStore.AuthAPI\PetStore.AuthAPI.csproj", "{36EF6DB8-3399-4F8D-A279-CA8B542D70A3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PetStore.Web", "PetStore.Web\PetStore.Web.csproj", "{384B58EC-4B2C-4F99-8C02-1584066601CE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A99B151-0D5D-4F86-846E-D484756AEFC4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A99B151-0D5D-4F86-846E-D484756AEFC4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A99B151-0D5D-4F86-846E-D484756AEFC4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A99B151-0D5D-4F86-846E-D484756AEFC4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{36EF6DB8-3399-4F8D-A279-CA8B542D70A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{36EF6DB8-3399-4F8D-A279-CA8B542D70A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{36EF6DB8-3399-4F8D-A279-CA8B542D70A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{36EF6DB8-3399-4F8D-A279-CA8B542D70A3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{384B58EC-4B2C-4F99-8C02-1584066601CE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{384B58EC-4B2C-4F99-8C02-1584066601CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{384B58EC-4B2C-4F99-8C02-1584066601CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{384B58EC-4B2C-4F99-8C02-1584066601CE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{050720F0-E584-4968-AEBA-35022ACF8F73} = {B570239A-36E6-4032-8C9F-352B29BFBE2E}
+		{E9D2DD11-EDB0-4E30-A2AB-275F44227F7A} = {B570239A-36E6-4032-8C9F-352B29BFBE2E}
+		{0A99B151-0D5D-4F86-846E-D484756AEFC4} = {050720F0-E584-4968-AEBA-35022ACF8F73}
+		{36EF6DB8-3399-4F8D-A279-CA8B542D70A3} = {E9D2DD11-EDB0-4E30-A2AB-275F44227F7A}
+		{384B58EC-4B2C-4F99-8C02-1584066601CE} = {08D943E3-4F6C-45FE-9448-8DA032DD309B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {00C35F2E-7969-4365-B2FE-1A4D6F1905CC}
+	EndGlobalSection
+EndGlobal

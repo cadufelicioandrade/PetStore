@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "n/C6OcXs3jl0JPgx8g/rgoPGVwDtfoyqw+Trt5Q9LZU=",
+  "Source": "PetStore.AuthAPI",
+  "BasePath": "_content/PetStore.AuthAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
