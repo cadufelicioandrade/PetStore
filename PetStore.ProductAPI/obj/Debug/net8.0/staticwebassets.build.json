@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "LdJD6R0eM72sn0Pe4QpqNaF2aZMQXNg9Zt4zCjlUbWs=",
+  "Source": "PetStore.ProductAPI",
+  "BasePath": "_content/PetStore.ProductAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

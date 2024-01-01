@@ -7,11 +7,11 @@ namespace PetStore.ProductAPI.Controllers
     [Route("api/[controller]")]
     public class ProductController : ControllerBase
     {
-        [HttpGet]
-        [Authorize(Roles ="Client")]
-        public IActionResult Index()
+        [HttpPost]
+        [Authorize(Roles = "client")]
+        public IActionResult Index([FromBody] string code)
         {
-            return Ok();
+            return Ok(code);
         }
     }
 }
