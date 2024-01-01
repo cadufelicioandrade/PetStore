@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "tR1SBfY3MTXNCKOyjnXemNy2Qr6gm7EF6gtl7hDu6bE=",
+  "Source": "PetStore.Authorization",
+  "BasePath": "_content/PetStore.Authorization",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
