@@ -1,7 +1,15 @@
+using PetStore.Web.Services;
+using PetStore.Web.Services.Interfaces;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+builder.Services.AddHttpClient<IAuthService, AuthService>(a =>
+{
+    a.BaseAddress = new Uri(builder.Configuration["ServicesUrls:Authorization"]);
+});
 
 var app = builder.Build();
 

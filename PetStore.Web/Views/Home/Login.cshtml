@@ -1,0 +1,47 @@
+﻿@model PetStore.Web.Models.AuthModel
+
+<form asp-action="Login">
+    <br />
+    <div class="container border p-3">
+        <h1 class="text-primary">Login</h1>
+
+        <hr />
+
+        <div class="row">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="col-2">
+                <label asp-for="Username" class="control-label pt-2" style="font-size:20px;">
+                    User Name
+                </label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Username" class="form-control" />
+                <span asp-validation-for="Username" class="text-danger" />
+            </div>
+
+            <div class="col-2">
+                <label asp-for="Password" class="control-label pt-2" style="font-size:20px;">
+                    Password
+                </label>
+            </div>
+            <div class="col-10 pb-3">
+                <input asp-for="Password" class="form-control" type="password" />
+                <span asp-validation-for="Password" class="text-danger" />
+            </div>
+
+            <div class="col-5 offset-2">
+                <a asp-action="ProductIndex" class="btn-primary btn form-control">Back to List</a>
+            </div>
+            <div class="col-5">
+                <input type="submit" value="Login" class="btn btn-success form-control" />
+            </div>
+        </div>
+
+    </div>
+</form>
+
+@section Scripts {
+    <partil name="_ValidationScriptsPartial">
+}
+

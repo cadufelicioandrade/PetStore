@@ -7,6 +7,17 @@ namespace PetStore.Web.Extensions
     {
         private static MediaTypeHeaderValue contentType = new MediaTypeHeaderValue("application/json");
 
+        public static async Task<string> ReadContentAsString(this HttpResponseMessage response)
+        {
+            if (!response.IsSuccessStatusCode)
+                throw new ApplicationException($"Something went wrong calling the API: {response.ReasonPhrase}");
+
+            var dataAsString = await response.Content.ReadAsStringAsync().ConfigureAwait(false);
+
+            return dataAsString;
+
+        }
+
         public static async Task<T> ReadContentAs<T>(this HttpResponseMessage response)
         {
             if (!response.IsSuccessStatusCode)
@@ -16,7 +27,6 @@ namespace PetStore.Web.Extensions
 
             return JsonSerializer.Deserialize<T>(dataAsString,
                         new JsonSerializerOptions { PropertyNameCaseInsensitive = true });
-
         }
 
         public static Task<HttpResponseMessage> PostAsJson<T>(this HttpClient httpClient, string url, T data)

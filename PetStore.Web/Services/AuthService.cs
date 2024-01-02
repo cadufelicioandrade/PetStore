@@ -30,9 +30,13 @@ namespace PetStore.Web.Services
             //login
             var response = await _httpClient.PostAsJsonAsync($"{BasePath}/login", authModel);
             if (response.IsSuccessStatusCode)
-                return await response.ReadContentAs<string>();
+            {
+                return await response.ReadContentAsString();
+            }
             else
+            {
                 throw new Exception("Something went wrong when calling API");
+            }
         }
 
         public async Task<bool> LogoutUser()
