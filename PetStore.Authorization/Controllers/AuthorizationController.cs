@@ -8,7 +8,7 @@ using PetStore.Authorization.Services;
 namespace PetStore.Authorization.Controllers
 {
     [ApiController]
-    [Route("authorization/[controller]")]
+    [Route("api/[controller]")]
     public class AuthorizationController : ControllerBase
     {
         
@@ -38,6 +38,13 @@ namespace PetStore.Authorization.Controllers
                 return BadRequest("Unable to login user");
 
             return Ok(token);
+        }
+        
+        [HttpPost("logout")]
+        public async Task<ActionResult> LogoutUser([FromBody] LoginUserDTO dto)
+        {
+            
+            return Ok();
         }
     }
 }
